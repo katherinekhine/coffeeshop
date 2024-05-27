@@ -120,6 +120,16 @@ document.addEventListener("DOMContentLoaded", function () {
   sr.reveal(".home-title-ani", { origin: "bottom" });
   sr.reveal(".about-img-ani", { origin: "left" });
   sr.reveal(".about-p-ani", { origin: "right" });
+  sr.reveal(".menu-tab-ani", { interval: 300 });
+  sr.reveal(".menu-list-ani", {
+    origin: "bottom",
+    delay: 300,
+  });
+  sr.reveal(".review-ani");
+  sr.reveal(".contact-h-ani");
+  sr.reveal(".contact-ani", { origin: "bottom" });
+  sr.reveal(".footer-f-ani", { origin: "left" });
+  sr.reveal(".footer-sec-ani", { origin: "bottom" });
 
   // console.log("ScrollReveal setup complete");
 });
