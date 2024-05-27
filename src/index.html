@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupCraft cafe</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- icon -->
+    <link rel="shortcut icon" href="../img/icon.jpg" type="image/x-icon">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class=" fixed left-0 top-0 w-full z-50" id="header">
+        <nav class="container h-14 relative flex justify-between items-center">
+            <div>
+                <a href="#home" class="text-2xl uppercase tracking-widest font-semibold text-primaryColor">CupCraft</a>
+            </div>
+            <div class="hidden absolute top-0 left-0 w-full py-14 border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto bg-darkBlueColor md:bg-transparent"
+                id="nav-menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row">
+                    <li><a href="#home"
+                            class="text-secondaryColor hover:text-secondaryColor ease-in duration-200 nav-link">Home</a>
+                    </li>
+                    <li><a href="#about" class="hover:text-secondaryColor ease-in duration-200 nav-link">About Us</a>
+                    </li>
+                    <li><a href="#menu" class="hover:text-secondaryColor ease-in duration-200 nav-link">Menu</a></li>
+                    <li><a href="#review" class="hover:text-secondaryColor ease-in duration-200 nav-link">Reviews</a>
+                    </li>
+                    <li><a href="#contact" class="hover:text-secondaryColor ease-in duration-200 nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor" id="theme-toggle"></i>
+
+                <div class="md:hidden" id="hamburger">
+                    <i class="ri-menu-2-line cursor-pointer ml-4 text-xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home section -->
+        <section id="home" class="h-screen bg-center bg-cover"
+            style="background-image: url(../img/home-bg.jpg); opacity: 45%;">
+            <div class="text-center container home-title-ani">
+                <h1 class=" text-2xl font-bold md:text-3xl text-titleColor mt-36">“Welcome to our shop, where each cup
+                    is a
+                    journey”
+                </h1>
+                <p class="text-lg w-4/5 text-whiteColor mt-5 mx-auto lg:w-2/3 md:w-9/12 md:text-2xl">Join us for
+                    handcrafted
+                    brews,
+                    artisanal flavors, and moments that elevate your day. Step in, savor, and discover the
+                    essence of exceptional coffee."</p>
+                <a href="#menu"
+                    class="inline-block text-xl px-8 py-2 text-center cursor-pointer rounded-2xl bg-btnColor text-navColor hover:opacity-75 ease-linear duration-200 mt-8">Order</a>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about">
+            <div class="container flex flex-col gap-10 md:flex-row">
+                <div class="flex-1 about-img-ani">
+                    <img src="../img/about.jpg" alt="about image" class="rounded-lg"
+                        style="height: 600px; width: 450px;">
+                </div>
+
+                <div class="flex-1 mt-5 mx-4 md:mx-0 about-p-ani">
+                    <h2 class="section-title mb-7 md:mb-5 lg:mb-7">About Us</h2>
+                    <p class="paragraph md:text-base md:leading-6 lg:paragraph">At <span class="text-primaryColor">
+                            CupCraft</span>,
+                        we're all about
+                        exceptional coffee and genuine
+                        connections. Handpicking the finest beans, crafting
+                        exquisite brews, and fostering a cozy atmosphere, we invite you to join us in celebrating the
+                        love for a perfect cup.</p>
+                    <p class="paragraph mt-4 md:text-base md:leading-6 lg:paragraph">We're more than just a coffee shop;
+                        we're a
+                        community hub, a creative
+                        space,
+                        and a haven for coffee enthusiasts and
+                        casual drinkers alike. Our dedicated team is here to guide you through our selection, share
+                        stories about our beans, and
+                        make each visit memorable.</p>
+                    <p class="paragraph mt-4 md:text-base md:leading-6 lg:paragraph">Step into CupCraft and discover not
+                        just a place
+                        to grab your favorite
+                        beverage
+                        but a destination that invites you to
+                        linger, converse, and create lasting memories. Join us on this caffeinated adventure as we
+                        continue to craft
+                        extraordinary experiences, one cup at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <section id="menu">
+            <div class="container">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="section-title tracking-widest">MENUS</h2>
+
+                    <div class="tabs-wrap">
+                        <ul class="flex flex-wrap justify-center gap-10 py-10">
+                            <li data-tabs="all" class="btn btn-primary ">All</li>
+                            <li data-tabs="coffee" class="btn btn-primary ">Coffee</li>
+                            <li data-tabs="snack" class="btn btn-primary ">Snack</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+                        <!-- coffee -->
+                        <li class="item-wrap coffee bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div class="h-56 grid place-items-center lg:h-40 ">
+                                <img src="../img/Americano.jpg" alt="coffee img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>Americano</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor text-lg">$2</h2>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item-wrap coffee bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div class="h-56 grid place-items-center lg:h-40 ">
+                                <img src="../img/cappuccino.jpg" alt="coffee img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>cappuccino</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor text-lg">$2</h2>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item-wrap coffee bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div class="h-56 grid place-items-center lg:h-40 ">
+                                <img src="../img/espresso.jpg" alt="coffee img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>espresso</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor text-lg">$2</h2>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item-wrap coffee bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div class="h-56 grid place-items-center lg:h-40 ">
+                                <img src="../img/latte.jpg" alt="coffee img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>latte</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$2</h2>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item-wrap coffee bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div class="h-56 grid place-items-center lg:h-40 ">
+                                <img src="../img/mocha.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>mocha</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$2</h2>
+                                </div>
+                            </div>
+
+                        </li>
+                        <!-- snack -->
+                        <li class="item-wrap snack bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div
+                                class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl ease-linear duration-200 lg:h-40">
+                                <img src="../img/snack-1.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>French Fries</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$21.00</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-wrap snack bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div
+                                class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl ease-linear duration-200 lg:h-40">
+                                <img src="../img/snack-2.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>hamburger with Fries</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$21.00</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-wrap snack bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div
+                                class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl ease-linear duration-200 lg:h-40">
+                                <img src="../img/snack-3.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>Sandwich</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$21.00</h2>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item-wrap snack bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div
+                                class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl ease-linear duration-200 lg:h-40">
+                                <img src="../img/snack-4.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>Strawberry creep</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$21.00</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-wrap snack bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div
+                                class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl ease-linear duration-200 lg:h-40">
+                                <img src="../img/snack-5.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>Cheese cake</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$21.00</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-wrap snack bg-cardColor mx-3 rounded-lg md:mx-0 pb-3">
+                            <div
+                                class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl ease-linear duration-200 lg:h-40">
+                                <img src="../img/snack-6.jpg" alt="food img"
+                                    class="w-60 hover:scale-110 ease-linear duration-200 md:w-52 lg:w-36 h-44 md:h-40 lg:h-28">
+                            </div>
+                            <div class="pt-2">
+                                <div class="flex justify-between items-center card-title px-7">
+                                    <h3>rainbow cupcake</h3>
+                                    <i class="fa-solid fa-cart-shopping ml-4 cursor-pointer text-navColor"></i>
+                                </div>
+                                <div class="ml-7">
+                                    <h2 class="text-titleColor">$21.00</h2>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- reviews -->
+        <section id="review">
+            <div class="container pt-20">
+                <div class="text-center m-auto mb-10 md:w-1/2">
+                    <h2 class="section-title tracking-widest">Reviews</h2>
+                </div>
+
+                <!-- review -->
+                <div class="flex items-center justify-center flex-wrap">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fHww"
+                        alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                        onclick="reviews()">
+                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fHww"
+                        alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="reviews()">
+                    <img src="https://images.unsplash.com/photo-1595252512391-b3d87e332ed2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGh1bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="reviews()">
+                    <img src="https://images.unsplash.com/photo-1597155844518-1b4b3daf8269?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGh1bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="reviews()">
+                </div>
+
+                <div class="grid place-items-center m-auto text-center md:w-4/5 min-h-[40vh]">
+                    <div class="user-text active-text">
+                        <h4 class="font-bold text-lg mb-1 text-cardColor ">Rosie</h4>
+                        <p class="text-base md:text-lg mb-4 text-navColor text-center">Lorem, ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Ipsum
+                            quae molestias nam
+                            veritatis exercitationem qui earum asperiores in, possimus dicta ducimus atque dolor
+                            molestiae ipsa sunt similique sint tempora? Accusamus.</p>
+                    </div>
+                    <div class="user-text">
+                        <h4 class="font-bold text-lg mb-1 text-cardColor ">Thomas</h4>
+                        <p class="text-base md:text-lg mb-4 text-navColor text-center">Lorem, ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Ipsum
+                            quae molestias nam
+                            veritatis exercitationem qui earum asperiores in, possimus dicta ducimus atque dolor
+                            molestiae ipsa sunt similique sint tempora? Accusamus.</p>
+
+                    </div>
+                    <div class="user-text">
+                        <h4 class="font-bold text-lg mb-1 text-cardColor ">Kevin</h4>
+                        <p class="text-base md:text-lg mb-4 text-navColor text-center">Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Ipsum
+                            quae molestias nam
+                            veritatis exercitationem qui earum asperiores in, possimus dicta ducimus atque dolor
+                            molestiae ipsa sunt similique sint tempora? Accusamus.</p>
+                    </div>
+                    <div class="user-text">
+                        <h4 class="font-bold text-lg mb-1 text-cardColor ">Susan</h4>
+                        <p class="text-base md:text-lg mb-4 text-navColor text-center">Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Ipsum
+                            quae molestias nam
+                            veritatis exercitationem qui earum asperiores in, possimus dicta ducimus atque dolor
+                            molestiae ipsa sunt similique sint tempora? Accusamus.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="container py-10">
+                <div class="text-center m-auto">
+                    <h2 class="section-title tracking-widest">Contact</h2>
+                </div>
+                <form action="" class="mx-2 mt-5 md:mt-10 md:mx-0">
+                    <div class="w-full m-auto text-center">
+                        <div class="grid gap-6 mb-5 md:grid-cols-2">
+                            <input type="text"
+                                class="bg-gray-100 border border-gray-500 text-sm text-black rounded-lg block w-full p-3 focus:outline-none focus:border-primaryColor"
+                                placeholder="Name">
+                            <input type="email"
+                                class="text-black border bg-gray-100 border-gray-50 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-primaryColor"
+                                placeholder="Email">
+                        </div>
+                        <textarea name="" id="" rows="4"
+                            class="text-black bg-gray-100 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-primaryColor"
+                            placeholder="Message"></textarea>
+                        <button
+                            class="mt-5 md:mt-10 px-3 py-3 bg-btnColor rounded-md capitalize font-semibold hover:opacity-80 ease-in duration-200 btn">Send
+                            message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section id="footer">
+            <div class="bg-menuBtnColor">
+                <div class="container py-10">
+                    <div class="grid gap-10 md:grid-cols-2 mx-2 mb-10">
+                        <div class="space-y-6">
+                            <h4 class="font-bold text-lg text-titleColor">CupCraft</h4>
+                            <p class="capitalize leading-relaxed text-justify ">Lorem ipsum dolor sit amet
+                                consectetur adipisicing adipisicing
+                                elitLaboriosam, labore ducimus laborum eum eum velit qui!</p>
+                            <div class="flex gap-5 items-center">
+                                <p>Follow Us</p><i
+                                    class="fa-brands fa-facebook-f cursor-pointer hover:text-primaryColor"></i>
+                                <i class="fa-brands fa-twitter cursor-pointer hover:text-primaryColor"></i>
+                                <i class="fa-brands fa-instagram cursor-pointer hover:text-primaryColor"></i>
+                                <i class="fa-brands fa-whatsapp cursor-pointer hover:text-primaryColor"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-6">
+                                <h4 class="text-lg font-bold">Quick Links</h4>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#home">Home</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#about">About Us</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#menu">Menus</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#review">Reviews</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="space-y-6">
+                                <h4 class="text-lg font-bold">Help</h4>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#home">Partners</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#about">Career</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#menu">Terms& Conditions</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#review">Location</a></li>
+                                    <li class="underline hover:no-underline hover:text-primaryColor"><a
+                                            href="#contact">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center pt-10 border-t border-titleColor">
+                        <p>2024 &copy; Khine Shun Lae</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- custom js -->
+    <script src="../js/main.js"></script>
+    <!-- scroll reveal -->
+    <script src="../js/scroll-reveal.js"></script>
+</body>
+
+</html>

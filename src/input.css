@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply text-navColor bg-darkBlueColor tracking-wider;
+    }
+
+    section {
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-block text-sm py-1 px-4 capitalize text-center cursor-pointer rounded-md ease-linear duration-200;
+    }
+
+    .btn-primary {
+        @apply bg-menuBtnColor text-navColor hover:opacity-75;
+    }
+}
+
+@layer utilities {
+
+    .home-title,
+    .section-title {
+        @apply text-4xl font-bold uppercase lg:text-5xl;
+    }
+
+    .card-title {
+        @apply text-xl lg:text-base capitalize font-semibold;
+    }
+
+    .section-title {
+        @apply text-2xl font-bold text-titleColor;
+    }
+
+    .paragraph {
+        @apply text-whiteColor text-lg leading-7 text-justify;
+    }
+}
+
+.tabs-wrap ul li:hover,
+.tabs-wrap ul li.active {
+    @apply bg-titleColor text-darkBlueColor;
+}
+
+.user-text {
+    display: none;
+}
+
+.active-text {
+    display: block;
+    animation: moveUp 1s linear forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.user-pic {
+    transition: all 0.1s ease-in;
+}
+
+.active-pic {
+    border: 2px solid #94B1DE;
+}
